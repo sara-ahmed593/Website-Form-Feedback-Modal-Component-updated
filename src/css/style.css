@@ -1,0 +1,230 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .frame {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background-color: #D0CBF3;
+     display: none;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+ }
+
+
+
+ .modal {
+
+     width: 100%;
+     max-width: 920px;
+     background-color: #1A1832;
+     border-radius: 20px;
+
+ }
+
+ .close-icon {
+
+     display: flex;
+     justify-content: flex-end;
+
+
+ }
+
+ .close-icon .close-img {
+     width: 34px;
+     height: 34px;
+     cursor: pointer;
+     margin: 18px 18px;
+ }
+
+ .title {
+
+     display: flex;
+     width: 100%;
+     max-width: 630px;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: 71px auto 65px;
+
+ }
+
+ .title h2 {
+     color: white;
+     font-size: 26px;
+     font-family: "Merriweather", serif;
+     line-height: 36px;
+     font-weight: 700;
+
+ }
+
+
+ .num {
+     width: 60px;
+     height: 60px;
+     color: #B1B9D8;
+     background-color: #1A2036;
+     border: 1px solid #2E3650;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     cursor: pointer;
+
+     text-shadow: 0.9px 1px #2E3650;
+
+     font-family: "inter", serif;
+     font-size: 28px;
+     font-weight: 400;
+
+ }
+
+
+ .numbers {
+     display: flex;
+     justify-content: center;
+     gap: 24px;
+     width: 100%;
+     max-width: 816px;
+     margin: 64px auto 14px;
+     flex-wrap: wrap;
+
+
+
+ }
+
+
+
+ .rating-labels {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .rating-labels .rate-like {
+     color: white;
+     font-family: "inter", serif;
+     font-weight: 400;
+     font-size: 14px;
+     width: 100%;
+     max-width: 108px;
+     margin: 14px 52px;
+
+
+
+
+ }
+
+ .rating-labels .rate-nlike {
+     color: white;
+     font-family: "inter", serif;
+     font-weight: 400;
+     font-size: 14px;
+     width: 100%;
+     max-width: 97px;
+     margin: 14px 52px;
+
+
+
+ }
+
+
+ .action {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+ }
+
+ .cancel-btn,
+ .submit-btn,
+ .start-btn {
+     width: 144px;
+
+     height: 44px;
+
+     border-radius: 5px;
+
+     font-size: 16px;
+     font-weight: 400;
+
+     font-family: "Inter", sans-serif;
+
+     cursor: pointer;
+ }
+
+
+ .action .cancel-btn {
+     color: white;
+     background-color: #1A1832;
+     border: 1px solid #7A58F4;
+
+     margin: 64px 52px 38px;
+
+
+ }
+
+ .action .submit-btn {
+     color: white;
+     background-color: #7A58F4;
+     border: none;
+
+     margin: 64px 52px 38px;
+ }
+
+ .start-btn {
+     color: white;
+     margin: 10px;
+     background-color: #7A58F4;
+     border: none;
+ }
+
+
+
+ @media(max-width :576px) {
+     .title {
+         margin: 24px auto 20px;
+
+     }
+
+     .modal {
+         padding: 16px;
+     }
+
+     .title h2 {
+         line-height: 40px;
+         font-size: 24px;
+
+     }
+
+     .numbers {
+         gap: 12px;
+
+     }
+
+     .num {
+         width: 45px;
+         height: 45px;
+         font-size: 20px;
+     }
+
+     .action {
+         flex-direction: column-reverse;
+         gap: 2px;
+     }
+
+     .action .cancel-btn {
+         margin: 12px 52px 5px;
+
+     }
+
+     .action .submit-btn {
+         margin: 20px 52px 5px;
+
+     }
+ }

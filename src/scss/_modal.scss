@@ -1,0 +1,165 @@
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.frame {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: variables.$bg-purple;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+
+    .modal {
+
+        width: 100%;
+        max-width: 920px;
+        background-color: variables.$bg-dark;
+        border-radius: 20px;
+
+
+        .close-icon {
+
+            display: flex;
+            justify-content: flex-end;
+
+            .close-img {
+                width: 34px;
+                height: 34px;
+                cursor: pointer;
+                margin: 18px 18px;
+            }
+        }
+
+
+
+        .title {
+
+            display: flex;
+            width: 100%;
+            max-width: 630px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 71px auto 65px;
+
+            h2 {
+                color: variables.$tx-white;
+                font-size: 26px;
+                font-family: variables.$font-me;
+                line-height: 36px;
+                font-weight: 700;
+
+            }
+
+        }
+
+
+
+        .numbers {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            width: 100%;
+            max-width: 816px;
+            margin: 64px auto 14px;
+            flex-wrap: wrap;
+
+
+
+            .num {
+                width: 60px;
+                height: 60px;
+                color: #B1B9D8;
+                background-color: variables.$bg-num;
+                border: 1px solid variables.$bor-num;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                cursor: pointer;
+
+                text-shadow: 0.9px 1px variables.$bor-num;
+                font-family: variables.$font-in;
+                font-size: 28px;
+                font-weight: 400;
+
+            }
+        }
+
+
+
+        .rating-labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+            span {
+                color: variables.$tx-white;
+                font-family: variables.$font-in;
+                font-weight: 400;
+                font-size: 14px;
+                width: 100%;
+                max-width: 108px;
+                margin: 14px 52px;
+
+
+
+
+            }
+
+
+        }
+
+    }
+}
+
+
+@media(max-width :576px) {
+    .frame {
+
+        .modal {
+            padding: 16px;
+
+
+            .title {
+                margin: 24px auto 20px;
+
+                h2 {
+                    line-height: 40px;
+                    font-size: 24px;
+
+                }
+            }
+
+            .numbers {
+                gap: 12px;
+
+                .num {
+                    width: 45px;
+                    height: 45px;
+                    font-size: 20px;
+                }
+
+            }
+
+
+            .rating-labels {
+                span {
+                    font-size: 11px;
+                }
+
+            }
+
+        }
+    }
+}
