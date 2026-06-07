@@ -10,10 +10,10 @@ project/
 |
 |--src/
 |   |    --scss/
-|   |    |---_buttons.scss
-|   |    |---_modal.scss
 |   |    |---_variables.scss
+|   |    |---_modal.scss
 |   |    |--- main.scss
+|   |    
 |   |
 |   | --css/
 |   |    |--- style.css
