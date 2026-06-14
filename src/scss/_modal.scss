@@ -120,122 +120,122 @@
 
         }
 
+        
+%common-btn {
+    width: 144px;
 
-        %common-btn {
-            width: 144px;
+    height: 44px;
 
-            height: 44px;
+    border-radius: 5px;
 
-            border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
 
-            font-size: 16px;
-            font-weight: 400;
+    font-family: variables.$font-in;
 
-            font-family: variables.$font-in;
-
-            cursor: pointer;
-        }
-
-
-
-        .action {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            .cancel-btn {
-                @extend %common-btn;
-
-                color: white;
-                background-color: variables.$bg-dark;
-                border: 1px solid variables.$bg-main;
-
-                margin: 64px 52px 38px;
-            }
-
-            .submit-btn {
-                @extend %common-btn;
-
-                color: white;
-                background-color: variables.$bg-main;
-                border: none;
-
-                margin: 64px 52px 38px;
-            }
-
-        }
-
-
-        .start-btn {
-            @extend %common-btn;
-
-            color: white;
-            margin: 10px;
-            background-color: variables.$bg-main;
-            border: none;
-        }
+    cursor: pointer;
+}
 
 
 
+.action {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .cancel-btn {
+        @extend %common-btn;
+
+        color: white;
+        background-color: variables.$bg-dark;
+        border: 1px solid variables.$bg-main;
+
+        margin: 64px 52px 38px;
+    }
+
+    .submit-btn {
+        @extend %common-btn;
+
+        color: white;
+        background-color: variables.$bg-main;
+        border: none;
+
+        margin: 64px 52px 38px;
+    }
+
+}
 
 
-        @media(max-width :576px) {
-            .frame {
+.start-btn {
+    @extend %common-btn;
 
-                .modal {
-                    padding: 16px;
-
-
-                    .title {
-                        margin: 24px auto 20px;
-
-                        h2 {
-                            line-height: 40px;
-                            font-size: 24px;
-
-                        }
-                    }
-
-                    .numbers {
-                        gap: 12px;
-
-                        .num {
-                            width: 45px;
-                            height: 45px;
-                            font-size: 20px;
-                        }
-
-                    }
-
-
-                    .rating-labels {
-                        span {
-                            font-size: 11px;
-                        }
-
-                    }
+    color: white;
+    margin: 10px;
+    background-color: variables.$bg-main;
+    border: none;
+}
 
 
 
-                    .action {
-                        flex-direction: column-reverse;
-                        gap: 2px;
 
-                        .cancel-btn {
-                            margin: 12px 52px 5px;
 
-                        }
+@media(max-width :576px) {
+    .frame {
 
-                        .submit-btn {
-                            margin: 20px 52px 5px;
+        .modal {
+            padding: 16px;
 
-                        }
 
-                    }
+            .title {
+                margin: 24px auto 20px;
+
+                h2 {
+                    line-height: 40px;
+                    font-size: 24px;
 
                 }
             }
+
+            .numbers {
+                gap: 12px;
+
+                .num {
+                    width: 45px;
+                    height: 45px;
+                    font-size: 20px;
+                }
+
+            }
+
+
+            .rating-labels {
+                span {
+                    font-size: 11px;
+                }
+
+            }
+
+           
+
+ .action {
+        flex-direction: column-reverse;
+        gap: 2px;
+
+        .cancel-btn {
+            margin: 12px 52px 5px;
+
         }
+
+        .submit-btn {
+            margin: 20px 52px 5px;
+
+        }
+
+    }
+
+        }
+    }
+}
 
 
 

@@ -42,21 +42,18 @@ numbers.forEach(function (num) {
 
 });
 
-close.addEventListener('click', () => {
-    frame.style.display = 'none';
-    start.style.display = 'block';
-    valueRate = 0
-    resetRating()
-}
-)
-cancel.addEventListener('click', () => {
-    frame.style.display = 'none';
-    start.style.display = 'block';
-    valueRate = 0
-    resetRating()
 
+function closeModal() {
+frame.style.display = 'none';
+start.style.display = 'block';
+resetRating();
+  valueRate = 0
 }
-)
+
+close.addEventListener('click', closeModal);
+cancel.addEventListener('click', closeModal);
+
+
 submit.addEventListener('click', () => {
     if (valueRate == 0) {
         alert("Please rate first")
@@ -64,10 +61,7 @@ submit.addEventListener('click', () => {
     }
     else {
 
-        frame.style.display = 'none';
-        start.style.display = 'block';
-        valueRate = 0
-        resetRating()
+       closeModal();
     }
 
 
@@ -84,6 +78,5 @@ window.addEventListener('click', (e) => {
         frame.style.display = 'none'
     }
 })
-
 
 
